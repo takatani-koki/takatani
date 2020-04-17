@@ -16,7 +16,11 @@
 <!--Fonts-->
       <link rel="dns-prefetch" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600"rel="stylesheet" type="text/css">
+
+
 <!--styles-->
+{{-- Laravel標準で用意されているCSSを読み込みます --}}
+ <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 {{--この章の後半で作成するcssを読み込みます--}}
       <link href="{{asset('css/admin.css')}}"rel="stylesheet">
 {{--課題３にて追記}}
@@ -30,11 +34,7 @@
            <a class="navbar-brand" href="{{url('/')}}">
              {{config('app.name','Laravel')}}
           </a>
-          <button class="navbar-toggler"type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-          </button>
+
 
           <div class="collapse navbar" id="navbarSupportedContent">
             <!--Left Side Of Navbar-->

@@ -11,6 +11,10 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
+     //phplaravel 20 追記 public function boot 元々記載なし
+
+
+
     public function register()
     {
         //
@@ -23,6 +27,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+      if (\App::environment('production')) {
+    \URL::forceScheme('https');
+}
     }
 }

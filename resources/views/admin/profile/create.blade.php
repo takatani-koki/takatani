@@ -22,35 +22,35 @@
                               </ul>
                           @endif
                           <div class="form-group row">
-                              <label class="col-md-2" for="title">氏名</label>
+                              <label class="col-md-2" for="name">氏名</label>
                               <div class="col-md-10">
-                                  <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                                  <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                               </div>
                           </div>
 
                           <div class="form-group row">
-                            <p class="control-label"><strong>性別<strong></p>
-                              <label class="radio-inline">
-                               <input type="radio" value="1" name="gender" id="man">
+                            <p class="control-label"><strong>性別：<strong></p>
+                               <input type="radio" name="gender" id="man" value="男性">
+                              <label class="radio-inline" for="man">
                                男性
                              </label>
-                             <label class="radio-inline">
-                              <input type="radio" value="2" name="gender" id="woman">
+                             <input type="radio" name="gender" id="woman" value="女性">
+                             <label class="radio-inline" for="women">
                               女性
                             </label>
                           </div>
 
                           <div class="form-group row">
-                        <label class="col-md-2" for="body">趣味</label>
+                        <label class="col-md-2" for="hobby">趣味</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="hobby" rows="20">{{ old('hobby') }}</textarea>
                         </div>
                     </div>
 
                     <div class="form-group row">
-                <label class="col-md-2" for="body">自己紹介</label>
+                <label class="col-md-2" for="introduction">自己紹介</label>
                 <div class="col-md-10">
-                    <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
+                    <textarea class="form-control" name="introduction" rows="20">{{ old('introduction') }}</textarea>
                 </div>
             </div>
 
