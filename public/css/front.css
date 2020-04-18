@@ -1,5 +1,5 @@
 body {
-  color: #000;
+  color: #600F2B;
 }
 
 .header .logo {
@@ -9,7 +9,7 @@ body {
 
 .headline .caption {
   position: relative;
-  width: 350px;
+  width: 150px;
 }
 
 .headline .caption .image img {
@@ -50,4 +50,3 @@ body {
 .posts .post .image img {
   width: 250px;
 }
-
